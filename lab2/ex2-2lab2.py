@@ -1,0 +1,71 @@
+import turtle as t
+t.shape('classic')
+t.penup()
+t.goto(-150,0)
+t.pendown()
+def zero ():
+    t.left (90)
+    t.forward (40)
+    t.right(90)
+    t.forward (40)
+    t.right (90)
+    t.forward (80)
+    t.right (90)
+    t.forward (40)
+    t.right (90)
+    t.forward (40)
+    t.right (90)
+    t.penup ()
+def one ():
+    t.left (45)
+    t.forward (40*2**0.5)
+    t.right (135)
+    t.forward (80)
+    t.penup ()
+    t.right (135)
+    t.forward (40*2**0.5)
+    t.right (135)
+def seven ():
+    t.left (45)
+    t.forward (40*2**0.5)
+    t.left (135)
+    t.forward (40)
+    t.penup ()
+    t.left (90)
+    t.forward (80)
+    t.left (180)
+    t.pendown ()
+    t.forward (40)
+    t.right (90)
+    t.penup ()
+def four ():
+    t.forward (40)
+    t.right (90)
+    t.forward (40)
+    t.left (180)
+    t.forward (80)
+    t.left (180)
+    t.forward (40)
+    t.right (90)
+    t.forward (40)
+    t.right (90)
+    t.forward (40)
+    t.right (180)
+    t.forward (40)
+    t.left (90)
+    t.penup()
+n = '141700'
+A = 6 * [0]
+for i in range (len(A)):
+    A [i] = n [i]
+    if A [i] == '1':
+        one()
+    elif A [i] == '0':
+        zero()
+    elif A [i] == '4':
+        four()
+    elif A [i] == '7':
+        seven()
+    t.forward (50)
+    t.pendown ()
+input()
