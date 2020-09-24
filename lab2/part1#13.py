@@ -1,4 +1,4 @@
-mport turtle as t
+import turtle as t
 import numpy as np
 
 def circle(d):
