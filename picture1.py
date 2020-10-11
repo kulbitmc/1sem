@@ -79,8 +79,6 @@ circle (screen, WHITE, (305, 139), 30)
 circle (screen, BLACK, (305, 139), 30, 1)
 
 
-
-
 pygame.display.update()
 clock = pygame.time.Clock()
 finished = False
