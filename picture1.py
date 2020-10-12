@@ -29,7 +29,7 @@ rect (screen, YELLOW, (0, 580, 1000, 220))
 circle (screen, YELLOW, (850, 150), 75)
 
 
-arc(screen, SADDLEBROWN, (550, 380, 100, 100), numpy.pi, 1.5*numpy.pi, 200)
+arc(screen, SADDLEBROWN, (550, 380, 100, 100), numpy.pi, 1.5*numpy.pi, 49)
 
 rect (screen, SADDLEBROWN, (600, 430, 250, 50))
 line (screen, BLACK,(600, 430), (600, 480))
